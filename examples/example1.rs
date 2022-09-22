@@ -1,15 +1,10 @@
-extern crate num_bigint_dig as num_bigint;
-
-use num_bigint::ToBigUint;
-
-mod util;
-mod structures;
-mod lhp;
+use num_bigint_dig::ToBigUint;
+use htlp::lhp;
 
 fn main() {
     // Example: generate two puzzles and homomorphicly add them
 
-    let pp = lhp::setup::setup(20, 10.to_biguint().unwrap()); // generate parameters that uses 20 bit representation, time parameter is 10
+    let pp = lhp::setup::setup(20, 18.to_biguint().unwrap()); // generate parameters that uses 20 bit representation, time parameter is 10
 
     //First Puzzle
 

@@ -3,16 +3,6 @@
 version = 3
 
 [[package]]
-name = "HTLP"
-version = "0.1.0"
-dependencies = [
- "modular",
- "num-bigint-dig",
- "num-integer",
- "rand",
-]
-
-[[package]]
 name = "autocfg"
 version = "0.1.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -45,6 +35,16 @@ dependencies = [
  "cfg-if",
  "libc",
  "wasi",
+]
+
+[[package]]
+name = "htlp"
+version = "0.1.0"
+dependencies = [
+ "modular",
+ "num-bigint-dig",
+ "num-integer",
+ "rand",
 ]
 
 [[package]]
