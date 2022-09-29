@@ -4,7 +4,7 @@ use htlp::lhp;
 fn main() {
     // Example: generate two puzzles and homomorphicly add them
 
-    let pp = lhp::setup::setup(20, 18.to_biguint().unwrap()); // generate parameters that uses 20 bit representation, time parameter is 10
+    let pp = lhp::setup::setup(20, 10.to_biguint().unwrap()); // generate parameters that uses 20 bit representation, time parameter is 10
 
     //First Puzzle
 

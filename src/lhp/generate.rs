@@ -1,5 +1,6 @@
 use crate::structures;
 use std::ops::{Sub, Mul, Add};
+use num_bigint::{BigInt, BigUint};
 use num_integer::Integer;
 use num_bigint_dig::{ToBigUint, RandBigInt};
 
@@ -8,7 +9,7 @@ extern crate num_bigint_dig as num_bigint;
 /**
 Generate puzzle given the public parameters with some secret.
 **/
-pub fn gen(pp: &structures::Params ,s: num_bigint::BigUint) ->structures::Puzzle{
+pub fn gen(pp: &structures::Params, s: BigUint) -> structures::Puzzle{
     let one =1.to_biguint().unwrap();
     let n_squared =(&pp.n).mul(&pp.n); // N^2
     let mut rng = rand::thread_rng();

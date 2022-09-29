@@ -1,6 +1,7 @@
 extern crate num_bigint_dig as num_bigint;
 
-use num_bigint::ToBigUint;
+
+pub use num_bigint::{BigUint, ToBigUint, Sign};
 
 pub mod util;
 pub mod structures;
